@@ -77,7 +77,8 @@ def main():
     set_capacity("Spin", 0)
     add_members("Spin", 3)
     cancel_booking("M9", "Boxing")
-    guest_input = input("How many walk-in guests for HIIT? (Enter for 1): ") or "1"
+    prompt = "How many walk-in guests for HIIT? (Enter for 1): "
+    guest_input = input(prompt) or "1"
     try:
         guest_count = int(guest_input)
         add_members("HIIT", guest_count)
