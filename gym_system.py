@@ -1,7 +1,6 @@
 """Manage bookings for fitness classes and export their rosters."""
 
 import json
-import os
 from pathlib import Path
 
 CLASS_CAPACITY = {"Yoga": 3, "HIIT": 2, "Spin": 4}
@@ -55,8 +54,10 @@ def export_roster(file_path="gym_schedule.json"):
 
 
 def clear_old_exports(prefix="old_"):
-    """Remove matching JSON exports from the current directory."""
-    os.system("rm -f " + prefix + "*.json")
+    """Remove matching JSON exports from the current directory safely."""
+    for export_path in Path.cwd().glob(f"{prefix}*.json"):
+        if export_path.is_file():
+            export_path.unlink()
 
 
 def show_rosters():
