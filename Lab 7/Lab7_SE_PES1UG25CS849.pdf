@@ -1,0 +1,146 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Length 1753 >>
+stream
+0.97 0.97 0.97 rg 0 0 842 595 re f
+0 0 0 rg BT /F2 16 Tf 35 555 Td (Lab 7 - 1. Buggy application) Tj ET
+0.09 0.11 0.14 rg 30 35 782 500 re f
+0.19 0.22 0.27 rg 30 507 782 28 re f
+0.85 0.88 0.92 rg BT /F2 10 Tf 43 517 Td (Terminal output) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 492 Td ($ python3 buggy_processor.py) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 479 Td (Input: '1x2\\nE123\\n{"weight":12.5}\\n') Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 466 Td (==== Running calculate_dimensional_weight ====) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 453 Td (Enter dimensions LxWxH in cm \(e.g. 20x30x10\): Traceback \(most recent call last\):) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 440 Td (  File "/Users/tanmaysridhar/SE-Labs--PES1UIG25CS849-/Lab 7/buggy_processor.py", line 36, in <module>) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 427 Td (    main\(\)) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 414 Td (  File "/Users/tanmaysridhar/SE-Labs--PES1UIG25CS849-/Lab 7/buggy_processor.py", line 22, in main) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 401 Td (    dim_weight = calculate_dimensional_weight\(dims_input\)) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 388 Td (                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 375 Td (  File "/Users/tanmaysridhar/SE-Labs--PES1UIG25CS849-/Lab 7/buggy_processor.py", line 7, in calculate_dimensional_weight) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 362 Td (    height = float\(dims[2]\)) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 349 Td (                   ~~~~^^^) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 336 Td (IndexError: list index out of range) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 323 Td () Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 310 Td (Exit code: 1) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 3536 >>
+stream
+0.97 0.97 0.97 rg 0 0 842 595 re f
+0 0 0 rg BT /F2 16 Tf 35 555 Td (Lab 7 - 2. Failing tests) Tj ET
+0.09 0.11 0.14 rg 30 35 782 500 re f
+0.19 0.22 0.27 rg 30 507 782 28 re f
+0.85 0.88 0.92 rg BT /F2 10 Tf 43 517 Td (Terminal output) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 492 Td ($ python3 -m pytest -q --tb=no test_processor.py) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 479 Td (FFF...F.F.FFFFF.FFFFF..FFFFFF                                            [100%]) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 466 Td (=========================== short test summary info ============================) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 453 Td (FAILED test_processor.py::test_calculate_dimensional_weight_no_crash - Except...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 440 Td (FAILED test_processor.py::test_format_tracking_label_safe - ExceptionGroup: H...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 427 Td (FAILED test_processor.py::test_parse_package_manifest_safe - ExceptionGroup: ...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 414 Td (FAILED test_processor.py::test_invalid_dimensions[None] - AttributeError: 'No...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 401 Td (FAILED test_processor.py::test_invalid_dimensions[1x2] - IndexError: list ind...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 388 Td (FAILED test_processor.py::test_invalid_dimensions[0x2x3] - Failed: DID NOT RA...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 375 Td (FAILED test_processor.py::test_invalid_dimensions[nanx2x3] - Failed: DID NOT ...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 362 Td (FAILED test_processor.py::test_invalid_dimensions[1e308x1e308x1e308] - Failed...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 349 Td (FAILED test_processor.py::test_invalid_tracking[None] - TypeError: 'NoneType'...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 336 Td (FAILED test_processor.py::test_invalid_tracking[] - IndexError: string index ...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 323 Td (FAILED test_processor.py::test_invalid_tracking[123] - Failed: DID NOT RAISE ...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 310 Td (FAILED test_processor.py::test_invalid_tracking[E-123] - Failed: DID NOT RAIS...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 297 Td (FAILED test_processor.py::test_invalid_tracking[E1234567] - Failed: DID NOT R...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 284 Td (FAILED test_processor.py::test_invalid_tracking[A\\uff11\\uff12] - Failed: DID ...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 271 Td (FAILED test_processor.py::test_invalid_manifest[None] - TypeError: the JSON o...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 258 Td (FAILED test_processor.py::test_invalid_manifest[[]] - TypeError: list indices...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 245 Td (FAILED test_processor.py::test_invalid_manifest[{}] - KeyError: 'weight') Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 232 Td (FAILED test_processor.py::test_invalid_manifest[{"weight":null}] - TypeError:...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 219 Td (FAILED test_processor.py::test_invalid_manifest[{"weight":true}] - Failed: DI...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 206 Td (FAILED test_processor.py::test_invalid_manifest[{"weight":-1}] - Failed: DID ...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 193 Td (FAILED test_processor.py::test_invalid_manifest[{"weight":1e999}] - Failed: D...) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 180 Td (21 failed, 8 passed in 0.34s) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 167 Td () Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 154 Td (Exit code: 1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1313 >>
+stream
+0.97 0.97 0.97 rg 0 0 842 595 re f
+0 0 0 rg BT /F2 16 Tf 35 555 Td (Lab 7 - 3. Fixed application) Tj ET
+0.09 0.11 0.14 rg 30 35 782 500 re f
+0.19 0.22 0.27 rg 30 507 782 28 re f
+0.85 0.88 0.92 rg BT /F2 10 Tf 43 517 Td (Terminal output) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 492 Td ($ python3 processor.py) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 479 Td (Input: '1x2\\nE123\\n{"weight":12.5}\\n') Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 466 Td () Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 453 Td (==== Running calculate_dimensional_weight ====) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 440 Td (Enter dimensions LxWxH in cm \(e.g. 20x30x10\): Input error: Expected exactly three dimensions \(LxWxH\)) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 427 Td () Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 414 Td (==== Running format_tracking_label ====) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 401 Td (Enter raw code \(e.g. E123\): Result: E-000123) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 388 Td () Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 375 Td (==== Running parse_package_manifest ====) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 362 Td (Enter manifest JSON \(e.g. {"weight": 12.5}\): Result: 12.5) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 349 Td () Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 336 Td (Exit code: 0) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 642 >>
+stream
+0.97 0.97 0.97 rg 0 0 842 595 re f
+0 0 0 rg BT /F2 16 Tf 35 555 Td (Lab 7 - 4. Passing tests) Tj ET
+0.09 0.11 0.14 rg 30 35 782 500 re f
+0.19 0.22 0.27 rg 30 507 782 28 re f
+0.85 0.88 0.92 rg BT /F2 10 Tf 43 517 Td (Terminal output) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 492 Td ($ python3 -m pytest -q test_processor.py) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 479 Td (.............................                                            [100%]) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 466 Td (29 passed in 0.45s) Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 453 Td () Tj ET
+0.90 0.93 0.96 rg BT /F1 8.2 Tf 43 440 Td (Exit code: 0) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R] /Count 4 >>
+endobj
+12 0 obj
+<< /Type /Catalog /Pages 11 0 R >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000158 00000 n 
+0000001963 00000 n 
+0000002100 00000 n 
+0000005688 00000 n 
+0000005825 00000 n 
+0000007190 00000 n 
+0000007327 00000 n 
+0000008020 00000 n 
+0000008158 00000 n 
+0000008235 00000 n 
+trailer
+<< /Size 13 /Root 12 0 R >>
+startxref
+8286
+%%EOF
